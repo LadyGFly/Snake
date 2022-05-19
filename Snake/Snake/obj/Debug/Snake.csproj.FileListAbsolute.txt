@@ -1,0 +1,9 @@
+E:\MY\vs\Snake\Snake\bin\Debug\Snake.exe.config
+E:\MY\vs\Snake\Snake\obj\Debug\Snake.csprojResolveAssemblyReference.cache
+E:\MY\vs\Snake\Snake\obj\Debug\Snake.Form1.resources
+E:\MY\vs\Snake\Snake\obj\Debug\Snake.csproj.GenerateResource.Cache
+E:\MY\vs\Snake\Snake\bin\Debug\Snake.exe
+E:\MY\vs\Snake\Snake\bin\Debug\Snake.pdb
+E:\MY\vs\Snake\Snake\obj\Debug\Snake.exe
+E:\MY\vs\Snake\Snake\obj\Debug\Snake.pdb
+E:\MY\vs\Snake\Snake\obj\Debug\Snake.Properties.Resources.resources
