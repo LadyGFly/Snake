@@ -3,47 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows.Forms;
 namespace Snake
 {
-    class Food
+    class Food:IMake
     {
+        PictureBox _pBfood;
+        int posX;
+        int posY;
+
+        public PictureBox PBfood { get => _pBfood; set => _pBfood = value; }
+        public int PosX { get => posX; set => posX = value; }
+        public int PosY { get => posY; set => posY = value; }
+
+
+        //食物消失
+        public void cancel()
+        {
+            this._pBfood.Visible = false;
+        }
+
         //生成食物
-
-        public void Makefood()
+        public void Make(Random random)
         {
-            //普通食物
-        }
-
-        void MakeReward()
-        {
-            //神秘礼物
-        }
-
-        void MakeDemage()
-        {
-            //陷阱
-        }
-
-        void TriggerFood()
-        {
-            //食物自身消失  
-            //长一截身体
-            //+5分
-            //生成一个新食物
-            //每次有百分之二十的概率生成神秘礼物/陷阱
-        }
-
-        void TriggerReward()
-        {
-            //神秘礼物自身消失  
-            //+10~20分
-        }
-
-        void TriggerDemage()
-        {
-            //陷阱自身消失  
-            //-15分
+            this.posX = random.Next(0, 300);
+            this.posY = random.Next(0, 300);
+            this.PBfood.Location = new System.Drawing.Point(this.posX, this.posY);
+            this._pBfood.Visible = true;
         }
     }
 }
